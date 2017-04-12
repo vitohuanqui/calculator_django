@@ -1,0 +1,5 @@
+[report]
+omit =
+    calculator/settings.py
+    */__init__.py
+    */tests.py

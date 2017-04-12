@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<hi>SADASDASDSADDSADAS</hi>
+{% if form %}
+<form action="/multiply/" method="post">
+    {{ form.as_table }}
+    <input type="submit" value="OK">
+</form>
+  {% else %}
+<h1>Termino  {{ data }} </h1>
+{% endif %}
+</body>
+</html>
