@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
 from django.conf.urls import url
-from views import Multiply, Divide
+from .views import Multiply, Divide
 
 urlpatterns = [
     url(r'^multiply/?$', Multiply.as_view(), name='x'),

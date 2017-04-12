@@ -9,6 +9,7 @@ from rest_framework_jsonp.renderers import JSONPRenderer
 
 from .form import NameForm
 
+
 class Multiply(APIView):
 
     renderer_classes = (JSONPRenderer,)
