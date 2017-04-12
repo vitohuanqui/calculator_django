@@ -22,7 +22,6 @@ class Multiply(APIView):
 
     @staticmethod
     def post(request):
-        print 'asdsadsadsdasadsad'
         # create a form instance and populate it with data from the request:
         form = NameForm(request.POST)
         # check whether it's valid:
