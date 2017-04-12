@@ -22,16 +22,11 @@ class Multiply(APIView):
 
     @staticmethod
     def post(request):
-        # create a form instance and populate it with data from the request:
         form = NameForm(request.POST)
-        # check whether it's valid:
         if form.is_valid():
             a = form.cleaned_data['one']
             b = form.cleaned_data['second']
-            data = a*b 
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
+            data = a*b
             return render(request, 'name.html', {'data': data})
 
 
