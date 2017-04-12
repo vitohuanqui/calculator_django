@@ -11,4 +11,4 @@ class PricesSerializerTest(TestCase):
         response = self.client.post(
             reverse('x'),
             data=self.form)
-        print response.context['data']
+        self.assertEqual(36, response.context['data'])
