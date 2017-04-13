@@ -10,6 +10,9 @@ from rest_framework_jsonp.renderers import JSONPRenderer
 from .form import NameForm
 
 
+def multiply(a,b):
+    return a*b
+
 class Multiply(APIView):
 
     renderer_classes = (JSONPRenderer,)
@@ -26,7 +29,7 @@ class Multiply(APIView):
         if form.is_valid():
             a = form.cleaned_data['one']
             b = form.cleaned_data['second']
-            data = a*b
+            data = multiply(a, b)
             return render(request, 'name.html', {'data': data})
 
 
