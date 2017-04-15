@@ -2,3 +2,4 @@ Django==1.8.5
 djangorestframework==3.2.4
 djangorestframework-jsonp==1.0.2
 coverage==4.3.4
+factory-boy==2.8.1

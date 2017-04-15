@@ -31,6 +31,8 @@ class Multiply(APIView):
             b = form.cleaned_data['second']
             data = multiply(a, b)
             return render(request, 'name.html', {'data': data})
+        else:
+            return render(request, 'name.html', {'data': "error"})
 
 
 class Divide(APIView):
