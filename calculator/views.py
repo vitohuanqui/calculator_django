@@ -6,7 +6,7 @@ __author__ = 'jhonjairoroa87'
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework_jsonp.renderers import JSONPRenderer
-
+from django.db import models
 from .form import NameForm
 
 
