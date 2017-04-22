@@ -1,1 +1,13 @@
-test
+{
+  "name": "django-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js_test.js",
+  "dependencies": {
+    "test": "*"
+  },
+  "scripts": {
+    "test": "/home/vito/Documents/universidad/metodos_formales/calculator_django/django-calculator/js_test.js"
+  },
+  "author": ""
+}
