@@ -16,9 +16,9 @@ test('removeOnClick removes button on click', function(assert) {
 test('copyOnClick adds button on click', function(assert) {
     var $ = django.jQuery;
     copyOnClick('.button');
-    assert.equal($('.button').length === 1);
+    assert.equal($('.button').length === 0);
     $('.button').click();
-    assert.equal($('.button').length === 2);
+    assert.equal($('.button').length === 1);
 });
 
 
