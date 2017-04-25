@@ -23,7 +23,7 @@ class PricesSerializerTest(TestCase):
         response = self.client.post(
             reverse('x'),
             data=self.form_2)
-        self.assertEqual("error11   ", response.context['data'])
+        self.assertEqual("error", response.context['data'])
 
     def test_view_200(self):
         response = self.client.post(

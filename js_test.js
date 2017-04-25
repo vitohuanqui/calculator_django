@@ -29,3 +29,10 @@ test('set number', function(assert) {
     assert.equal($('.one').text() === 4);
     assert.equal($('.second').text() === 4);
 });
+
+QUnit.test("set number", function (assert) {
+    $('.one').val(4);
+    $('.second').val(4);
+    assert.ok($('.one').text() === 4);
+    assert.ok($('.second').text() === 4);
+});
