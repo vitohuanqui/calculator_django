@@ -6,7 +6,7 @@ __author__ = 'jhonjairoroa87'
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework_jsonp.renderers import JSONPRenderer
-
+from django.db import models
 from .form import NameForm
 
 
@@ -31,6 +31,8 @@ class Multiply(APIView):
             b = form.cleaned_data['second']
             data = multiply(a, b)
             return render(request, 'name.html', {'data': data})
+        else:
+            return render(request, 'name.html', {'data': "error"})
 
 
 class Divide(APIView):
